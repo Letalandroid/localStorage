@@ -13,6 +13,7 @@ const guardarDatos = () => {
 
         localStorage.setItem("NombreUsuario", usuario.value);
         localStorage.setItem("Password", password.value);
+        alert("Usuario añadido exitosamente, puede proceder a Entrar")
 
     }
 
@@ -30,7 +31,7 @@ const registrar = (e) => {
     else if (usuario.value == localStorage.getItem("NombreUsuario") && password.value == localStorage.getItem("Password")) {} else {
 
         e.preventDefault();
-        alert("Nombre de usuario o contraseña incorrectos.")
+        alert("Nombre de usuario o contraseña incorrectos.");
 
     }
 
