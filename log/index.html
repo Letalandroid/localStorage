@@ -8,9 +8,16 @@
 </head>
 <body>
     <h1 id="mensaje"></h1>
-    <form action="../index.html">
-        <a href="../" id="exit">Salir</a>
+    <form>
+        <input type="text" placeholder="Añadir tarea" id="tarea">
+        <input type="button" value="Add" id="add">
     </form>
+    <div>
+        <ul id="tareas"></ul>
+    </div>
+    <input type="button" value="Limpiar tareas" id="clear">
+    <br>
+    <a href="../" id="exit">Salir</a>
     <script src="main.js"></script>
 </body>
 </html>
